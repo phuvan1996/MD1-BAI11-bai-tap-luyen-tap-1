@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mangso=[];
+  for (let i = 0; i <5 ; i++) {
+    let number=+prompt('nhap so');
+    mangso.push(number);
+  }document.write("mangso=["+mangso+"]<br>");
+  mangso.sort();
+  mangso.sort(function (a,b){
+    return b-a;
+  })
+  document.write('thứ tự giảm dần là : '+mangso)
+</script>
+</body>
+</html>

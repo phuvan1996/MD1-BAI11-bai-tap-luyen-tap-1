@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let mangso=[]
+   for (let i = 0; i <10 ; i++) {
+     let  number= +prompt("nhap so")
+       mangso.push(number);
+   }document.write("number = ["+mangso+"]<br>")
+   let max=mangso[0];
+   let index=0;
+   for (let i = 1; i <mangso.length ; i++) {
+       if (mangso[i]>max){
+           max=mangso[i]
+           index=i;
+       }
+   }document.write("so lon nhat : "+max+'<br>'+"vi tri: "+index)
+</script>
+</body>
+</html>

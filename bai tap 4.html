@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mangso=[];
+  for (let i = 0; i <5 ; i++) {
+      let number=+prompt('nhap so');
+      mangso.push(number)
+  }document.write("mangso = ["+mangso+"]<br>");
+  let first = 0;
+  let last=mangso.length - 1
+  while (first<last){
+      let b=mangso[first];
+      mangso[first]=mangso[last];
+      mangso[last]=b;
+      first++;
+      last--;
+  }document.write('mảng số được đảo ngược là : ' + mangso)
+</script>
+</body>
+</html>
